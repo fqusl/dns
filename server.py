@@ -158,7 +158,7 @@ def url_to_bytes(url):
     return bytes + b'\0'
 
 if __name__ == '__main__':
-    server = DNSServer(53, ('ns1.e1.ru', 53), 'cache')
+    server = DNSServer(5053, ('8.8.8.8', 53), 'cache')
     try:
         server.start()
     except KeyboardInterrupt:
